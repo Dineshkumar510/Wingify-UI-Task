@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>UI Task</title>
+        <meta name="description" content="UI Task" />
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="background">
+                <div class="up-circle">
+                    <svg id="wave" style="transform: rotate(180deg); transition: 0.3s;" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                                <stop stop-color="rgba(100, 46, 255, 1)" offset="0%"></stop>
+                                <stop stop-color="rgba(76, 7, 131, 1)" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path
+                            style="transform: translate(0, 0); opacity: 1;"
+                            fill="url(#sw-gradient-0)"
+                            d="M0,147L120,130.7C240,114,480,82,720,81.7C960,82,1200,114,1440,147C1680,180,1920,212,2160,245C2400,278,2640,310,2880,310.3C3120,310,3360,278,3600,220.5C3840,163,4080,82,4320,81.7C4560,82,4800,163,5040,163.3C5280,163,5520,82,5760,89.8C6000,98,6240,196,6480,196C6720,196,6960,98,7200,65.3C7440,33,7680,65,7920,130.7C8160,196,8400,294,8640,310.3C8880,327,9120,261,9360,269.5C9600,278,9840,359,10080,383.8C10320,408,10560,376,10800,326.7C11040,278,11280,212,11520,179.7C11760,147,12000,147,12240,171.5C12480,196,12720,245,12960,269.5C13200,294,13440,294,13680,253.2C13920,212,14160,131,14400,122.5C14640,114,14880,180,15120,236.8C15360,294,15600,343,15840,367.5C16080,392,16320,392,16560,334.8C16800,278,17040,163,17160,106.2L17280,49L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"
+                        ></path>
+                    </svg>
+                </div>
+                <div class="half-circle">
+                    <div class="card-layout">
+                        <div class="img-side">
+                            <div class="img-container">
+                                <img class="img-form" src="./assets/assets.png" width="100%" height="500px" alt="Background Image" />
+                                <div class="Img-content">
+                                    <div class="content">
+                                        <div class="header"><h1>Sample heading</h1></div>
+                                        <div class="sub-heading">
+                                            <ol>
+                                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                                <li>Adipisicing elit tempore dolorem</li>
+                                                <li>laborum distinctio incidunt quae voluptas tempore dolorem</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-layout">
+                                <div class="form-content">
+                                    <div class="form-heading"><p class="side-heading">Create an account</p></div>
+                                    <div class="main-formContent">
+                                        <form class="form">
+                                            <div class="input-group">
+                                                <label for="email">Enter you email</label><input type="text" name="email" id="email" />
+                                                <div class="error-message" id="emailError"></div>
+                                            </div>
+                                            <div class="dob">
+                                                <div class="dobHeading">
+                                                    <span>
+                                                        Date of birth
+                                                        <p class="dobsub">(optional)</p>
+                                                    </span>
+                                                </div>
+                                                <div class="dobOptions">
+                                                    <div class="input-group">
+                                                        <label for="Date" class="labelDob">Date</label><input type="text" name="Date" id="Date" class="dobInput" />
+                                                        <div class="error-message" id="emailError" style="position: absolute; margin-top: 1% !important;"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <div class="container">
+                                                            <div class="select">
+                                                                <label class="labelDob">Month</label>
+                                                                <select class="dropdown" style="width: 8rem;">
+                                                                    <option value="January">January</option>
+                                                                    <option value="February">February</option>
+                                                                    <option value="March">March</option>
+                                                                    <option value="April">April</option>
+                                                                    <option value="May">May</option>
+                                                                    <option value="June">June</option>
+                                                                    <option value="July">July</option>
+                                                                    <option value="August">August</option>
+                                                                    <option value="September">September</option>
+                                                                    <option value="october">october</option>
+                                                                    <option value="November">November</option>
+                                                                    <option value="December">December</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <div class="container">
+                                                            <div class="select">
+                                                                <label class="labelDob">Year</label>
+                                                                <select class="dropdown" style="width: 6rem;">
+                                                                    <option value="1994">1994</option>
+                                                                    <option value="1995">1995</option>
+                                                                    <option value="1996">1996</option>
+                                                                    <option value="1997">1997</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group" style="margin-top: 6% !important;">
+                                                <label for="password">Choose a strong password</label><input type="password" name="password" id="password" />
+                                                <div class="error-message" id="emailError"></div>
+                                            </div>
+                                            <div class="input-group">
+                                                <label>Are you an agency or individual?</label>
+                                                <div class="radioButtons">
+                                                    <div class="radioOption"><input type="radio" id="Indi" name="Individual" value="Individual" /><label for="Indi">Individual</label></div>
+                                                    <div class="radioOption"><input type="radio" id="Agncy" name="Agency" value="Agency" /><label for="Agncy">Agency</label></div>
+                                                </div>
+                                            </div>
+                                            <div class="submitButton">
+                                                <button type="submit"><span>Submit</span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="down-circle">
+                    <svg id="wave" style="transform: rotate(0); transition: 0.3s;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1440 320">
+                        <defs>
+                            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                                <stop stop-color="rgba(100, 46, 255, 1)" offset="0%"></stop>
+                                <stop stop-color="rgba(76, 7, 131, 1)" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path
+                            style="transform: translate(0, 0); opacity: 1;"
+                            fill="url(#sw-gradient-0)"
+                            fill-opacity="1"
+                            d="M0,256L120,218.7C240,181,480,107,720,96C960,85,1200,139,1320,165.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <script src="/main.js" async defer="defer"></script>
+    </body>
+</html>
